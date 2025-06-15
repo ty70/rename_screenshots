@@ -1,54 +1,54 @@
-# スクリーンショットファイル名変換スクリプト
+# Screenshot Filename Conversion Script
 
-このスクリプトは、macOS や一部の環境で生成される「スクリーンショット YYYY-MM-DD HHMMSS.png」形式のファイル名を「YYYY-MM-DD\_HHMMSS.png」に変換し、指定したディレクトリへコピーするユーティリティです。
-
----
-
-## 📝 ファイル構成
-
-* `scripts/rename_screenshots.py`: メインの実行スクリプト
+This script is a utility that converts filenames in the format "Screenshot YYYY-MM-DD HHMMSS.png," which are commonly generated on macOS and some other environments, into the format "YYYY-MM-DD\_HHMMSS.png," and copies them into a specified directory.
 
 ---
 
-## 🔧 必要な環境
+## 📝 File Structure
 
-* Python 3.6 以上
+* `scripts/rename_screenshots.py`: Main execution script
 
 ---
 
-## 🚀 インストールと使用方法
+## 🔧 Requirements
 
-### 1. リポジトリのクローン
+* Python 3.6 or higher
+
+---
+
+## 🚀 Installation and Usage
+
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/yourname/rename-screenshots.git
 cd rename-screenshots
 ```
 
-### 2. スクリプトの実行
+### 2. Run the Script
 
 ```bash
 python scripts/rename_screenshots.py --input_dir ./input --output_dir ./output
 ```
 
-### 引数の説明
+### Argument Description
 
-| 引数             | 説明                    |
-| -------------- | --------------------- |
-| `--input_dir`  | 元のファイルが保存されているディレクトリ  |
-| `--output_dir` | リネーム後のファイルを保存するディレクトリ |
+| Argument       | Description                                   |
+| -------------- | --------------------------------------------- |
+| `--input_dir`  | Directory where the original files are stored |
+| `--output_dir` | Directory to save the renamed files           |
 
 ---
 
-## 📁 入出力例
+## 📁 Input/Output Example
 
-### 入力ファイル名（例）
+### Example Input Filename
 
 ```
-スクリーンショット 2025-05-16 110952.png
+Screenshot 2025-05-16 110952.png
 ```
 
-### 出力ファイル名（例）
+### Example Output Filename
 
 ```
 2025-05-16_110952.png
@@ -56,19 +56,19 @@ python scripts/rename_screenshots.py --input_dir ./input --output_dir ./output
 
 ---
 
-## ⚠️ 注意事項
+## ⚠️ Notes
 
-* 入力ファイルは `スクリーンショット YYYY-MM-DD HHMMSS.png` の形式に正確に一致している必要があります。
-* 同名ファイルが出力ディレクトリに存在する場合は上書きされます。
+* Input filenames must exactly match the format `Screenshot YYYY-MM-DD HHMMSS.png`.
+* Files in the output directory with the same name will be overwritten.
 
 ---
 
-## 📄 ライセンス
+## 📄 License
 
 [MIT License](./LICENSE)
 
 ---
 
-## 🙋‍♂️ 貢献
+## 🤝 Contributions
 
-バグ報告・機能提案・プルリク歓迎です！
+Bug reports, feature suggestions, and pull requests are welcome!
